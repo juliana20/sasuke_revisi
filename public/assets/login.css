@@ -1,0 +1,66 @@
+
+    body{
+        background-image: url('images/background.png');
+        background-size: cover;
+    }
+
+    .wraplogin{
+        top: 20%;
+        left:50%;
+    }
+
+      .account-wall{
+           background: #ffffff3b;
+            border-radius: 2px;
+            /*box-shadow:*/
+            border: 1px solid #39ff6447;
+            padding: 20px 15px 20px;
+            /*border:1px;*/
+            /*box-shadow: 5px 10px red;*/
+        }
+
+        input[type=checkbox]+label{
+            display: block;
+            cursor: pointer;
+            font-weight: 300;
+
+        }
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+
+        input[type=checkbox]+label:before{
+            content: "\2714" !important;
+            border: 0.1em solid #d2d6de;
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            padding: 0em 0em 0.3em 0.3em;
+            margin-right: 0.5em;
+            color: transparent;
+            transition:.2s;
+        }
+
+
+        input[type=checkbox]+ label:active:before{
+            transform:scale(0);
+        }
+
+        input[type=checkbox]:checked + label:before{
+            background-color: #3c8dbc !important;
+            border-color: #3c8dbc;
+            color: #fff;
+        }
+
+        .form-control {
+            border-radius: 0;
+            box-shadow: none;
+            border-color: #2cef3ba1;
+        }
+
+        .form-control:focus {
+    border-color: #3bca00;
+    box-shadow: none;
+}
